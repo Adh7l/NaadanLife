@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naadan Life | Home Kitchen</title>
+  <link rel="stylesheet" href="css/kitchen.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <canvas id="steam"></canvas>
+
+  <h1 class="scene-title">🏠 Home Kitchen</h1>
+
+  <div class="audio-box-container">
+    <div class="audio-box">
+      <div class="box-header">🍳 Cooking</div>
+      <button id="cooking-btn" class="play-btn">▶️ Play</button>
+      <input id="cooking-vol" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+
+    <div class="audio-box">
+      <div class="box-header">🪑 Home</div>
+      <button id="home-btn" class="play-btn">▶️ Play</button>
+      <input id="home-vol" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5" />
+    </div>
+  </div>
+
+  <script src="js/kitchen.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerala Railway</title>
+  <link rel="stylesheet" href="css/railway.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <h1 class="scene-title">🚉 Kerala Railway</h1>
+
+  <div class="audio-box-container">
+    <div class="audio-box">
+      <div class="box-header">🌧️ Ambience</div>
+      <button class="play-btn" id="ambience-btn">▶️ Play</button>
+      <input type="range" min="0" max="1" step="0.01" id="ambience-vol" class="volume-slider" />
+    </div>
+
+    <div class="audio-box">
+      <div class="box-header">👥 Small Crowd</div>
+      <button class="play-btn" id="smallcrowd-btn">▶️ Play</button>
+      <input type="range" min="0" max="1" step="0.01" id="smallcrowd-vol" class="volume-slider" />
+    </div>
+
+    <div class="audio-box">
+      <div class="box-header">🧍🏽‍♂️🧍🏽‍♂️ Large Crowd</div>
+      <button class="play-btn" id="largecrowd-btn">▶️ Play</button>
+      <input type="range" min="0" max="1" step="0.01" id="largecrowd-vol" class="volume-slider" />
+    </div>
+
+    <div class="audio-box">
+      <div class="box-header">🚂 Train</div>
+      <button class="play-btn" id="train-btn">▶️ Play</button>
+      <input type="range" min="0" max="1" step="0.01" id="train-vol" class="volume-slider" />
+    </div>
+  </div>
+
+  <script src="js/railway.js"></script>
+</body>
+</html>

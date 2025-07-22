@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Ground</title>
+  <link rel="stylesheet" href="css/football.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <canvas id="rain-canvas"></canvas>
+
+  <h1 class="scene-title">🏟️ Football Ground</h1>
+
+  <div class="audio-box-container">
+    <div class="audio-box">
+      <div class="box-header">⚽ Stadium</div>
+      <button class="play-btn" id="stadium-btn">▶️ Play</button>
+      <input type="range" class="volume-slider" id="stadium-vol" min="0" max="1" step="0.01" value="0.7">
+    </div>
+
+    <div class="audio-box">
+      <div class="box-header">🌧️ Rain</div>
+      <button class="play-btn" id="rain-btn">▶️ Play</button>
+      <input type="range" class="volume-slider" id="rain-vol" min="0" max="1" step="0.01" value="0.5">
+    </div>
+  </div>
+
+  <script src="js/football.js"></script>
+</body>
+</html>

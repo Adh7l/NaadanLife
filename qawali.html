@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Qawali | Naadan Life</title>
+  <link rel="stylesheet" href="css/qawali.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <h1 class="scene-title">🎤 Qawali Vibes</h1>
+
+  <div class="audio-box-container">
+    
+    <!-- Qawali Music Box -->
+    <div class="audio-box" id="qawali-box">
+      <div class="box-header">🎶 Qawali</div>
+      <button class="play-btn">▶️ Play</button>
+      <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.7" />
+      <div id="now-playing" style="margin-top: 0.7rem; font-size: 0.9rem; color: #ccc;"></div>
+    </div>
+
+    <!-- Crowd Sound Box -->
+    <div class="audio-box" id="crowd-box">
+      <div class="box-header">🧕 Crowd</div>
+      <button class="play-btn">▶️ Play</button>
+      <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="0.75" />
+    </div>
+
+  </div>
+
+  <canvas id="particles"></canvas>
+
+  <script src="js/qawali.js"></script>
+</body>
+</html>

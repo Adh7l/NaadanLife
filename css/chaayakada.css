@@ -1,0 +1,116 @@
+/* -------------------
+   Base Styles
+-------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', sans-serif;
+  color: white;
+  background-image: url('../assets/images/chayaback.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* -------------------
+   Header
+-------------------- */
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/* -------------------
+   Audio Box Layout
+-------------------- */
+.audio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* -------------------
+   Each Box
+-------------------- */
+.audio-box {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.audio-box:hover {
+  transform: scale(1.05);
+}
+
+/* Icon */
+.audio-box .icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Label */
+.audio-box .label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.play-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: transform 0.2s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  color: #f0f0f0;
+}
+
+
+/* Volume Slider */
+.volume-slider {
+  width: 100%;
+  accent-color: #00c3ff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.volume-slider:hover {
+  transform: scale(1.05);
+}
+
+/* -------------------
+   Responsive
+-------------------- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .audio-box {
+    width: 90%;
+  }
+}

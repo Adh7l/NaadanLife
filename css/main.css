@@ -1,0 +1,59 @@
+/* main.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #232526, #414345);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 50px 20px 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #FFD369;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #dddddd;
+}
+
+.scene-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.scene-buttons a {
+  display: inline-block;
+  padding: 20px 35px;
+  background-color: #1f1f1f;
+  border: 2px solid #FFD369;
+  border-radius: 12px;
+  color: white;
+  font-style: italic;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.scene-buttons a:hover {
+  background-color: #FFD369;
+  color: #1f1f1f;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 211, 105, 0.6);
+}

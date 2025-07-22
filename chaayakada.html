@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chaayakada | Naadan Life</title>
+  <link rel="stylesheet" href="css/chaayakada.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>☕ Chaayakada</h1>
+  </header>
+
+  <main>
+    <div class="audio-container">
+
+     <div class="audio-box" id="music-box">
+  <h3>🎵 Music</h3>
+  <button class="play-btn" id="music-btn">▶️ Play</button>
+  <input type="range" min="0" max="1" step="0.01" value="0.7" id="music-vol" class="volume-slider">
+</div>
+
+<div class="audio-box" id="rain-box">
+  <h3>🌧️ Rain</h3>
+  <button class="play-btn">▶️ Play</button>
+  <input type="range" min="0" max="1" step="0.01" value="0.6" class="volume-slider">
+</div>
+
+<div class="audio-box" id="crowd-box">
+  <h3>🗣️ Crowd</h3>
+  <button class="play-btn">▶️ Play</button>
+  <input type="range" min="0" max="1" step="0.01" value="0.5" class="volume-slider">
+</div>
+
+
+    </div>
+  </main>
+
+  <script src="js/chaayakada.js"></script>
+</body>
+</html>
